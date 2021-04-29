@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/static/img\favicon\favicon.png">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<!--Title-->
+<title>E-Shop</title>
+
+
+<!--First Row-->
+<div>
+    <%- include('includes/header') %>
+</div>
+<!--Home Upper-->
+<section id="home-upper">
+    <div class="content-box-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="home-upper-heading" class="text-center">
+                        <h1>Welcome To <span>Jo E-shop</span></h1>
+                    </div>
+                    <div id="home-upper-text" class="text-center">
+                        <p>The online store that sells quality books assigned to by the tutor.</p>
+                    </div>
+                    <div id="home-btn" class="text-center">
+                        <a class="btn btn-general btn-home smooth-scroll" href="#home-lower" title="Shop Now" role="button">Start Leaerning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Home Upper Ends-->
+
+<section id="home-lower">
+    <div class="content-box-lg">
+        <div class="container">
+
+            <div class="row">
+                <% products.forEach(function(product){ %>
+                    <div class="col-md-2">
+                        <a href="/requestbook">
+                            <div class="img-wrapper">
+                                <div class="item">
+                                    <!--Item 01-->
+                                    <img src="/static/uploads/<%=product.image %>" alt="
+                        <%= product.category %>" class="img-responsive">
+                                </div>
+                                <div class="item-description">
+                                    <h4 class="item-title" style="color:#000000;">
+                                        <%= product.name %>
+                                    </h4>
+                                    <div class="desc">
+                                        <%= product.desc %>
+                                    </div>
+                                    <p class="item-text" style="color:#000000;">
+                                        <b>$
+                                        <%= product.price %></b>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <% }); %>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+<div>
+    <%- include('includes/footer') %>
+</div>
+
+
+<!--jQuery Library-->
+<script src="static/js/jquery.js"></script>
+<!--Custom JS-->
+<script src="static/js/script.js "></script>

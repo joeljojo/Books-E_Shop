@@ -1,0 +1,462 @@
+        /*=======================================================
+        Home and Body
+   ========================================================*/
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            color: #212226;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        section {
+            background: #ffffff;
+            overflow: hidden;
+        }
+        /*=======================================================
+        Content Boxes
+========================================================*/
+        
+        .content-box-lg {
+            padding: 120px 0;
+        }
+        
+        .content-box-md {
+            padding: 100px 0;
+        }
+        
+        .content-box-sm {
+            padding: 90px 0;
+        }
+        /*=======================================================
+        Home Upper
+========================================================*/
+        
+        #home-upper {
+            background: url("../img/home/home-upper.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            left: 23%;
+        }
+        /* Make Image Dim*/
+        
+        #home-upper .content-box-sm {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        #home-upper-heading h1 {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 100;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        
+        #home-upper-heading span {
+            color: #f4c613;
+        }
+        
+        #home-upper-text p {
+            color: #ffffff;
+            font-weight: 100;
+            font-size: 17px;
+            margin: 8px 0 30px 0;
+        }
+        /*=======================================================
+        Buttons
+========================================================*/
+        
+        .btn-general {
+            font-family: 'Raleway', sans-serif;
+            border-radius: 28px;
+            -webkit-border-radius: 28px;
+            -moz-border-radius: 28px;
+            -ms-border-radius: 28px;
+            -o-border-radius: 28px;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0 6px;
+            padding: 12px 46px 12px 46px;
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+        }
+        
+        .btn-home {
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        
+        .btn-home:hover,
+        btn-home:focus {
+            color: #ffffff;
+            background-color: #f4c613;
+            border: 1px solid #f4c613;
+        }
+        /*=======================================================
+        Home Pictures
+========================================================*/
+        
+        #home-lower .content-box-lg {
+            padding: 100px 0;
+        }
+        
+        .img-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 190px;
+            height: 350px;
+            box-shadow: 0 0 10px 0 rgba(235, 0, 0, 0.3);
+            transition: transform .8s ease;
+            -webkit-transition: transform .8s ease;
+            -moz-transition: transform .8s ease;
+            -ms-transition: transform .8s ease;
+            -o-transition: transform .8s ease;
+        }
+        
+        .img-wrapper:hover {
+            border: 2px solid rgba(235, 0, 0, 0.3);
+        }
+        
+        .img-wrapper .item {
+            height: 400px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            transition: transform .5s ease;
+            -webkit-transition: transform .5s ease;
+            -moz-transition: transform .5s ease;
+            -ms-transition: transform .5s ease;
+            -o-transition: transform .5s ease;
+        }
+        
+        .img-wrapper:hover img {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+        }
+        
+        .img-wrapper .item-description {
+            padding: 20px;
+            color: #212226;
+            text-decoration: none;
+        }
+        
+        #home-lower a {
+            text-decoration: none;
+        }
+        /*=======================================================
+        Footer
+========================================================*/
+        
+        footer {
+            background: #212226;
+            padding: 30px;
+        }
+        
+        footer .content-box-sm {
+            padding: 10px 0;
+        }
+        
+        footer h3 {
+            color: #f4c613;
+        }
+        
+        .footer-content hr {
+            width: 100%;
+            border-top: 1px solid #f4c613;
+        }
+        
+        ul.contact-list li {
+            color: #ffffff;
+            text-transform: lowercase;
+            list-style: none;
+        }
+        
+        ul.contact-list li i {
+            width: 40px;
+            font-size: 25px;
+        }
+        
+        ul.links-list li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: transform .5s linear;
+            -webkit-transition: transform .5s linear;
+            -moz-transition: transform .5s linear;
+            -ms-transition: transform .5s linear;
+            -o-transition: transform .5s linear;
+        }
+        
+        ul.links-list li:hover a {
+            color: #f4c613;
+        }
+        
+        .vision-stm {
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .mission-stm {
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .copyright-stm {
+            color: #ffffff;
+        }
+        
+        .copyright-stm span {
+            color: #f4c613;
+        }
+        /*=======================================================
+        Navigation
+========================================================*/
+        
+        .navbar {
+            padding: 35px 0 20px 0;
+            transition: all 300ms linear;
+            -webkit-transition: all 300ms linear;
+            -moz-transition: all 300ms linear;
+            -ms-transition: all 300ms linear;
+            -o-transition: all 300ms linear;
+        }
+        
+        .site-navbar-wrapper {
+            padding: 0 85px;
+        }
+        
+        .navbar-brand {
+            padding: 13px 15px;
+        }
+        
+        ul.navbar-nav>li>a {
+            font-family: "Raleway", sans-serif;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid #f4c613;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-style: none;
+        }
+        
+        ul.navbar-nav>li>a:hover,
+        ul.navbar-nav>li>a:focus {
+            color: #ffffff;
+            background-color: #f4c613;
+            transition: all 100ms linear;
+            -webkit-transition: all 100ms linear;
+            -moz-transition: all 100ms linear;
+            -ms-transition: all 100ms linear;
+            -o-transition: all 100ms linear;
+        }
+        /*White Navigation*/
+        
+        .white-nav-top {
+            background: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 8px 8px -9px #999999;
+            z-index: 2;
+        }
+        
+        .white-nav-top ul.navbar-nav>li>a {
+            color: #212226;
+        }
+        
+        .white-nav-top ul.navbar-nav>li>a:hover,
+        .white-nav-top ul.navbar-nav>li>a:focus {
+            color: #ffffff;
+        }
+        /*=======================================================
+       Login,Register,Addproducts Form Common Styles
+========================================================*/
+        
+        .login-form,
+        .register-form,
+        .products-form {
+            width: 500px;
+            padding: 25px 30px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            margin: 0 auto;
+        }
+        
+        .login-form button,
+        .register-form button,
+        .products-form button {
+            width: flex;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            background: #228B22;
+            font-size: 20px;
+            color: #ffffff;
+            border-color: transparent;
+            text-transform: uppercase;
+        }
+        
+        .login-form button:hover,
+        .register-form button:hover,
+        .products-form button:hover {
+            background-color: #f4c613;
+            color: #ffffff;
+            border-color: transparent;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /*Login and Register Form*/
+        
+        .login-heading h4,
+        .register-heading h4 {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        
+        .login-heading span,
+        .register-heading span {
+            color: #f4c613;
+        }
+        
+        .login-reg,
+        .register-log {
+            text-align: right;
+        }
+        
+        .login-reg p,
+        .register-log p {
+            font-size: 15px;
+        }
+        
+        .login-reg a,
+        .register-log a {
+            color: #f4c613;
+            text-decoration: none;
+        }
+        
+        .login-reg a:hover,
+        .register-log a:hover {
+            color: #f4c613;
+        }
+        /*Dissmissing Button */
+        /*=======================================================
+       Sidenav For Admin Panel
+   ========================================================*/
+        /* Fixed sidenav, full height */
+        
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            padding-top: 20px;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        /* Style the sidenav links and the dropdown  */
+        
+        .sidenav a,
+        .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #212226;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+        /* On mouse-over */
+        
+        .sidenav a:hover,
+        .dropdown-btn:hover {
+            color: #f4c613;
+        }
+        /* Main content */
+        
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 20px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+        
+        .dropdown-container {
+            display: none;
+            background-color: #ffffff;
+            padding-left: 8px;
+        }
+        /* Some media queries for responsiveness */
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        /*=======================================================
+       Register Form
+========================================================*/
