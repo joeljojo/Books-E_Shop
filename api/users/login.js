@@ -15,6 +15,8 @@ router.post('/', (req, res, next) => {
             failureRedirect: '/login',
             failureFlash: true
         }), (req, res, next);
+        res.send("Login Successfully");
+
     }
 
 
